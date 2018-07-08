@@ -23,8 +23,6 @@ WiFiClient wifi_client;
 PubSubClient mqtt_client(wifi_client);
 /* instancia o sensor DHT */
 DHT dht(DHTPIN, DHTTYPE);
-/* variavel que guarda o timestamp do ultimo envio */
-uint32_t ultimo_envio = 0;
 
 void conectar_wifi() {
   delay(10);
